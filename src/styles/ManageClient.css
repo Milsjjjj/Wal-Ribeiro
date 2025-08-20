@@ -1,0 +1,149 @@
+/* Cartão de treino: fundo branco, bordas arredondadas, sombra e espaçamento interno */
+.card {
+  width: 80%; /* Largura do card */
+  margin: 24px auto; /* Centraliza e espaça o card */
+  background: #fff; /* Fundo branco */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Sombra suave */
+  padding: 24px 16px; /* Espaçamento interno */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo na caixa */
+}
+
+/* Cartão de subcategoria: fundo cinza claro, bordas arredondadas, sombra e espaçamento interno */
+.subcard.category-group {
+  background: #f7f7f7; /* Fundo cinza claro */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04); /* Sombra leve */
+  padding: 16px 12px; /* Espaçamento interno */
+  margin-bottom: 18px; /* Espaço abaixo do card */
+  width: 95%; /* Largura do subcard */
+}
+
+/* Lista de treinos: remove marcadores e espaçamento padrão */
+.workouts-list {
+  list-style: none; /* Remove marcadores */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Cada item da lista de treino: alinha conteúdo na horizontal, espaça e evita quebra de linha */
+.workout-item {
+  display: flex; /* Layout em linha */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: space-between; /* Nome à esquerda, imagem e botão à direita */
+  margin-bottom: 10px; /* Espaço abaixo de cada item */
+  width: 100%;
+}
+
+/* Nome do treino: tamanho da fonte e espaçamento */
+.workout-name {
+  font-size: 1rem; /* Tamanho da fonte */
+  margin-right: 8px; /* Espaço à direita do nome */
+  flex: 1;
+  text-align: left;
+}
+
+/* Imagem do treino: tamanho fixo, corte proporcional e borda arredondada */
+.workout-gif {
+  width: 50px; /* Largura da imagem */
+  height: 50px; /* Altura da imagem */
+  object-fit: cover; /* Mantém proporção e cobre o espaço */
+  border-radius: 4px; /* Bordas levemente arredondadas */
+  margin-left: 8px;
+}
+
+/* Botão de remover treino: estilo e espaçamento */
+.remove-button {
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  background: #dc3545; /* Vermelho */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Botão de salvar treino: reduzido e com espaçamento lateral */
+.workout-list-item button {
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  margin-right: 4px;
+}
+
+/* Botão de salvar desabilitado: cor verde */
+.workout-list-item button[disabled] {
+  background: green !important;
+}
+
+/* Estilo para itens de cliente: exibe informações do cliente em linha, com espaçamento e borda */
+.client-item {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Espaço entre os elementos */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Botões dentro do item do cliente: estilo e espaçamento */
+.client-item button {
+  padding: 2px 8px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Botão de remover dentro do item do cliente: estilo específico */
+.client-item .remove-button {
+  background: #dc3545;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+/* Estilo para o título principal */
+h1 {
+  text-align: center;
+  color: #d61616; /* Vermelho */
+  text-shadow: 0 1px 2px #fff;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0.25);
+  border-radius: 12px;
+  padding: 12px 0;
+}
+
+/* Estilo para os campos de bioimpedância: layout em coluna e espaçamento */
+.bioimpedance-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaço entre os campos */
+}
+
+/* Estilo para os rótulos dos campos de bioimpedância */
+.bioimpedance-fields label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* Estilo para os campos de entrada de bioimpedância */
+.bioimpedance-fields input {
+  margin-top: 4px;
+  padding: 6px 8px;
+  font-size: 1rem;
+}

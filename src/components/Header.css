@@ -1,0 +1,9 @@
+/* Estilização do cabeçalho principal do site */
+.header {
+  background: #f2f4f5; /* Cor de fundo do cabeçalho */
+  color: #fff;         /* Cor do texto do cabeçalho */
+  padding: 16px;       /* Espaçamento interno */
+  text-align: center;  /* Centraliza o texto */
+  font-size: 1.5rem;   /* Tamanho da fonte */
+  font-weight: bold;   /* Negrito no texto */
+}

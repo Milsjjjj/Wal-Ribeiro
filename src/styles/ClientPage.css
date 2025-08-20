@@ -1,0 +1,45 @@
+.card.client-workouts {
+  background: #fff;                /* Fundo branco */
+  border-radius: 10px;             /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Sombra suave */
+  padding: 24px 16px;              /* Espaçamento interno */
+  margin: 24px auto;               /* Margem superior/inferior e centralização */
+  width: 80%;                      /* Largura do card */
+}
+
+.workout-item {
+  display: flex;                   /* Layout em linha */
+  align-items: center;             /* Alinha verticalmente ao centro */
+  margin-bottom: 10px;             /* Espaço abaixo de cada item */
+}
+
+.workout-name {
+  font-size: 1rem;                 /* Tamanho da fonte */
+  margin-right: 8px;               /* Espaço à direita do nome */
+}
+
+.workout-gif {
+  width: 100px;                     /* Largura da imagem */
+  height: 100px;                    /* Altura da imagem */
+  object-fit: cover;               /* Mantém proporção e cobre o espaço */
+  border-radius: 8px;              /* Bordas levemente arredondadas */
+  margin-left: 8px;
+}
+
+.mark-workout-btn {
+  margin-left: 8px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  min-width: 110px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.mark-workout-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
